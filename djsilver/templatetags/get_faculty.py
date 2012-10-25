@@ -1,7 +1,7 @@
 from django import template
 
-from silverstripe.models import Department, FacultyHomePageDepartments
-from silverstripe.config import DATABASE_NAME
+from djsilver.models import Department, FacultyHomePageDepartments
+from djsilver.config import DATABASE_NAME
 
 register = template.Library()
 

@@ -1,4 +1,4 @@
-from silverstripe.models import *
+from djsilver.models import *
 
 import sys
 

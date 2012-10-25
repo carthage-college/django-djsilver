@@ -1,7 +1,7 @@
 from django import template
 
-from silverstripe.models import SitetreeLive,FacultyHomePageLive
-from silverstripe.config import DATABASE_NAME
+from djsilver.models import SitetreeLive,FacultyHomePageLive
+from djsilver.config import DATABASE_NAME
 
 register = template.Library()
 

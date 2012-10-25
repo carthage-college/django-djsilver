@@ -1,8 +1,8 @@
 from django import template
 from django.core.cache import cache
 
-from silverstripe.config import DATABASE_NAME
-from silverstripe.models import  FacultyHomePageLive
+from djsilver.config import DATABASE_NAME
+from djsilver.models import  FacultyHomePageLive
 
 register = template.Library()
 
