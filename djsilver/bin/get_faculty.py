@@ -1,4 +1,5 @@
-from djsilver.models import *
+from djsilver.models import FacultyHomePageDepartments
+from djsilver.config import DATABASE_NAME
 
 import sys
 
@@ -8,7 +9,7 @@ except:
     print "Usage: python %s [deptartment name]" % sys.argv[0]
     sys.exit()
 
-faculty = FacultyHomePageDepartments.objects.using('silverstripe_faculty_pages').filter(departmentid__departmentname="%s" % dept).order_by("facultyhomepageid__lastname")
+faculty = FacultyHomePageDepartments.objects.using(DATABASE_NAME).filter(departmentid__departmentname="%s" % dept).order_by("facultyhomepageid__lastname")
 for f in faculty:
     try:
         print f.facultyhomepageid.id.urlsegment
